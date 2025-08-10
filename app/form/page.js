@@ -99,6 +99,10 @@ export default function ContactForm() {
         </form>
         {status && <p className="status-message">{status}</p>}
       </div> 
+      <footer>
+        <p>&copy; 2025 My Website</p>
+        <p>All rights reserved.</p>
+      </footer>
     </>
   );
 }

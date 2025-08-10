@@ -38,6 +38,7 @@ export default function Home() {
 
       <footer>
         <p>&copy; 2025 My Website</p>
+        <p>All rights reserved.</p>
       </footer>
     </>
   );

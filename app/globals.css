@@ -19,7 +19,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 2rem; /* 各項目の間隔を空ける */
+  gap: 1rem; /* 各項目の間隔を空ける */
   flex-wrap: wrap; /* スマホ表示で折り返せるように */
 }
 
@@ -88,4 +88,11 @@
   to {
     transform: rotateX(360deg) rotateY(360deg);
   }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f8f8f8; /* 任意で背景色 */
+  color: #555; /* 任意で文字色 */
 }

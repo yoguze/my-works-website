@@ -1,0 +1,88 @@
+/* ヘッダーとナビバー */
+.navbar {
+  background-color: #e3f2fd;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem; /* 各項目の間隔を空ける */
+  flex-wrap: wrap; /* スマホ表示で折り返せるように */
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #cbe8ff;
+  color: #005fa3;
+}
+
+/* 作品一覧のレイアウト */
+.works {
+  padding: 2rem;
+}
+
+.works .container {
+  max-width: 1000px;   /* 中央に収める幅 */
+  margin: 0 auto;      /* 中央寄せ */
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: 1fr; /* モバイル：1列 */
+  gap: 2rem;
+}
+
+/* PC以上で2列にする（ブレークポイントはお好みで） */
+@media (min-width: 900px) {
+  .work-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* PC：2列 */
+  }
+}
+
+.work-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.work-item img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;   /* サムネ比率をそろえる（任意） */
+  object-fit: cover;
+}
+
+.work-item .body {
+  padding: 1rem;
+}
+
+.work-item h2 {
+  margin: 0 0 .5rem;
+  font-size: 1.1rem;
+}
+
+.work-item p {
+  margin: 0;
+  color: #555;
+  font-size: .95rem;
+}

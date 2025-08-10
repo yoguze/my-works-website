@@ -22,7 +22,7 @@ export default function Home() {
         </nav>
       </header>
       <main className="ability-container">
-              <h1>Abilities</h1>
+              <h1>Ability</h1>
 
               <section>
                 <h2>Python</h2>
@@ -64,6 +64,7 @@ export default function Home() {
 
       <footer>
         <p>&copy; 2025 My Website</p>
+        <p>All rights reserved.</p>
       </footer>
     </>
   );
