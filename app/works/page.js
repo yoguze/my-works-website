@@ -31,7 +31,8 @@ export default function Home() {
                 <div className="body">
                     <h2>セキュリティキャンプ2025・全国大会</h2>
                     <p>自分は開発コースZ3「セキュリティAIagent開発ゼミ」に参加しました。
-                      ここで、外部APIを用いたアプリ開発・Webスクレイピング・セキュリティに関する知識を学べました。
+                      ここで、外部APIを用いたアプリ開発・Webスクレイピング・セキュリティに関する知識を学べただけでなく、
+                      本格的なチームでの開発経験を得ることができました。
                     </p>
                 </div>
               </article>
@@ -43,23 +44,23 @@ export default function Home() {
                       ユーザーはAIからの質問を通じて答えを絞り込んでいく。このとき始めてReactの利用とLLMを用いたアプリ開発が出来るようになった</p>
                     <li><Link href="https://github.com/yoguze/fruit-akinetor.git">https://github.com/yoguze/fruit-akinetor.git</Link></li>
                 </div>
-                </article>
-                <article className="work-item">
-                  <img src="/website.png" alt="作品2" />
-                  <div className="body">
-                      <h2>ポートフォリオ</h2>
-                      <p>Next.jsで作成。メールのお問い合わせフォームはgmail.jsを使用。</p>
-                      <li><Link href="https://github.com/yoguze/my-works-website.git">https://github.com/yoguze/my-works-website.git</Link></li>
-                  </div>
-                </article>
-                <article className="work-item">
-                  <img src="/button-click-game.png" alt="作品3" />
-                  <div className="body">
-                      <h2>ボタンクリックゲーム</h2>
-                      <p>人生で初めて1人で作った思い出の作品。これにより、プログラミングについて初めて面白さを感じるようになった。</p>
-                      <li><Link href="https://github.com/yoguze/button-click-game.git">https://github.com/yoguze/button-click-game.git</Link></li>
-                  </div>
-                </article>
+              </article>
+              <article className="work-item">
+                <img src="/website.png" alt="作品2" />
+                <div className="body">
+                    <h2>ポートフォリオ</h2>
+                    <p>Next.jsで作成。メールのお問い合わせフォームはgmail.jsを使用。</p>
+                    <li><Link href="https://github.com/yoguze/my-works-website.git">https://github.com/yoguze/my-works-website.git</Link></li>
+                </div>
+              </article>
+              <article className="work-item">
+                <img src="/button-click-game.png" alt="作品3" />
+                <div className="body">
+                    <h2>ボタンクリックゲーム</h2>
+                    <p>人生で初めて1人で作った思い出の作品。これにより、プログラミングについて初めて面白さを感じるようになった。</p>
+                    <li><Link href="https://github.com/yoguze/button-click-game.git">https://github.com/yoguze/button-click-game.git</Link></li>
+                </div>
+              </article>
                 
                 {/* 以降、アイテムを増やすだけでOK */}
             </div>
