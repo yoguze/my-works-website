@@ -40,7 +40,7 @@ export default function Home() {
                 <img src="/website.png" alt="作品2" />
                 <div className="body">
                     <h2>ポートフォリオ</h2>
-                    <p>制作背景など。</p>
+                    <p>Next.jsで作成。メールのお問い合わせフォームはgmail.jsを使用。</p>
                     <li><Link href="https://github.com/yoguze/my-works-website.git">https://github.com/yoguze/my-works-website.git</Link></li>
                 </div>
                 </article>
@@ -50,6 +50,15 @@ export default function Home() {
                     <h2>ボタンクリックゲーム</h2>
                     <p>人生で初めて1人で作った思い出の作品。これにより、プログラミングについて初めて面白さを感じるようになった。</p>
                     <li><Link href="https://github.com/yoguze/button-click-game.git">https://github.com/yoguze/button-click-game.git</Link></li>
+                </div>
+                </article>
+                <article className="work-item">
+                <img src="/finished-item.png" alt="作品4" />
+                <div className="body">
+                    <h2>セキュリティキャンプ2025・全国大会</h2>
+                    <p>自分は開発コースZ3「セキュリティAIagent開発ゼミ」に参加しました。
+                      ここで、外部APIを用いたアプリ開発・Webスクレイピング・セキュリティに関する知識を学べました。
+                    </p>
                 </div>
                 </article>
                 {/* 以降、アイテムを増やすだけでOK */}
