@@ -94,3 +94,19 @@
   font-weight: bold;
   color: #0077cc;
 }
+
+.social-icons {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: #333; /* デフォルト色 */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077cc; /* ホバー時の色 */
+}

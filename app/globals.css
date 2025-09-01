@@ -96,3 +96,19 @@ footer {
   background-color: #f8f8f8; /* 任意で背景色 */
   color: #555; /* 任意で文字色 */
 }
+
+.social-icons {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: #333; /* デフォルト色 */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077cc; /* ホバー時の色 */
+}

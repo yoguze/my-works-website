@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { FaXTwitter, FaGithub } from "react-icons/fa6"; 
 import './globals.css'; // または styles フォルダに移動した場合は 'styles/contact.css'
 
 export default function Home() {
@@ -59,13 +60,21 @@ export default function Home() {
                   セキュリティキャンプの事前課題のLLMアプリの開発をする上で取得した。これにより、ユーザー操作に応じたリアルタイムな画面更新や、状態管理を伴う複雑なアプリケーションの開発が可能になっています。
                 </p>
               </section>
-            </main>
-      
-
+      </main>
       <footer>
         <p>&copy; 2025 My Website</p>
         <p>All rights reserved.</p>
+        <div className="social-icons">
+          <a href="https://x.com/mu_ye60941" target="_blank" rel="noopener noreferrer">
+            <FaXTwitter size={28} />
+          </a>
+          <a href="https://github.com/yoguze" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={28} />
+          </a>
+        </div>
       </footer>
+
+      
     </>
   );
 }

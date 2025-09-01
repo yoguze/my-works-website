@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { FaXTwitter, FaGithub } from "react-icons/fa6"; 
 import './globals.css'; // または styles フォルダに移動した場合は 'styles/contact.css'
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
                 <img src="/website.png" alt="作品2" />
                 <div className="body">
                     <h2>ポートフォリオ</h2>
-                    <p>Next.jsで作成。メールのお問い合わせフォームはgmail.jsを使用。</p>
+                    <p>Next.jsで作成。メールのお問い合わせフォームはgmail.jsを使用。内容やデザインは検討中。</p>
                     <li><Link href="https://github.com/yoguze/my-works-website.git">https://github.com/yoguze/my-works-website.git</Link></li>
                 </div>
               </article>
@@ -70,6 +71,14 @@ export default function Home() {
       <footer>
         <p>&copy; 2025 My Website</p>
         <p>All rights reserved.</p>
+        <div className="social-icons">
+          <a href="https://x.com/mu_ye60941" target="_blank" rel="noopener noreferrer">
+            <FaXTwitter size={28} />
+          </a>
+          <a href="https://github.com/yoguze" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={28} />
+          </a>
+        </div>
       </footer>
     </>
   );
