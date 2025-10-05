@@ -65,7 +65,7 @@ export default function Home() {
         <p>&copy; 2025 My Website</p>
         <p>All rights reserved.</p>
         <div className="social-icons">
-          <a href="https://x.com/mu_ye60941" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/nmw_2025" target="_blank" rel="noopener noreferrer">
             <FaXTwitter size={28} />
           </a>
           <a href="https://github.com/yoguze" target="_blank" rel="noopener noreferrer">
