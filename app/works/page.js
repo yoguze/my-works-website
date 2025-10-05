@@ -28,6 +28,26 @@ export default function Home() {
             <h1>My Works</h1>
             <div className="work-list">
               <article className="work-item">
+                <img src="/seiyu-researcher.png" alt="作品6" />
+                <div className="body">
+                    <h2>声優リサーチャー</h2>
+                    <p>あらかじめ自分が好きな声優を設定してfeedparserを用いてGoogleニュースRSSを解析して設定したキーワードに関する記事を20件取得して
+                      APSchedulerで10分ごとに自動でニュースを更新する機能を実装した。これにより、PythonでのWebスクレイピングやRSSフィードの解析、スケジューリングの知識が深まった。
+                    </p>
+                    <li><Link href="https://github.com/yoguze/seiyu-researcher.git">https://github.com/yoguze/seiyu-researcher.git</Link></li>
+                </div>
+              </article>
+              <article className="work-item">
+                <img src="/button-click-game-v2.png" alt="作品5" />
+                <div className="body">
+                    <h2>ボタンクリックゲーム-version2.0</h2>
+                    <p>従来のボタンクリックゲームを改良してオンライン対戦できるようにした。この開発とセキュリティキャンプ・ミニ（愛知）
+                      を通じて、Websocketを用いたリアルタイム通信の実装ができるようになった。
+                    </p>
+                    <li><Link href="https://github.com/yoguze/button-click-game2.0.git">https://github.com/yoguze/button-click-game2.0.git</Link></li>
+                </div>
+              </article>
+              <article className="work-item">
                 <img src="/finished-item.png" alt="作品4" />
                 <div className="body">
                     <h2>セキュリティキャンプ2025・全国大会</h2>
@@ -62,8 +82,8 @@ export default function Home() {
                     <li><Link href="https://github.com/yoguze/button-click-game.git">https://github.com/yoguze/button-click-game.git</Link></li>
                 </div>
               </article>
-                
-                {/* 以降、アイテムを増やすだけでOK */}
+              
+              {/* 以降、アイテムを増やすだけでOK */}
             </div>
           </div>
         </section>
