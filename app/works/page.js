@@ -32,7 +32,7 @@ export default function Home() {
                 <div className="body">
                     <h2>声優リサーチャー</h2>
                     <p>あらかじめ自分が好きな声優を設定してfeedparserを用いてGoogleニュースRSSを解析して設定したキーワードに関する記事を20件取得して
-                      APSchedulerで10分ごとに自動でニュースを更新する機能を実装した。これにより、PythonでのWebスクレイピングやRSSフィードの解析、スケジューリングの知識が深まった。
+                      APSchedulerで10分ごとに自動でニュースを更新する機能を実装した。これにより、PythonでのWebスクレイピングやRSSフィードの解析ができるようになった。
                     </p>
                     <li><Link href="https://github.com/yoguze/seiyu-researcher.git">https://github.com/yoguze/seiyu-researcher.git</Link></li>
                 </div>
