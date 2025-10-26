@@ -28,6 +28,13 @@ export default function Home() {
             <h1>My Works</h1>
             <div className="work-list">
               <article className="work-item">
+                <img src="/sky-workshop.png" alt="インターン1" />
+                <div className="body">
+                    <h2>Sky株式会社:3Daysワークショップ</h2>
+                    <p>現在、参加予定で検討中です。</p>
+                </div>
+              </article>
+              <article className="work-item">
                 <img src="/seiyu-researcher.png" alt="作品6" />
                 <div className="body">
                     <h2>声優リサーチャー</h2>
