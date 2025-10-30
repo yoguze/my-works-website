@@ -39,6 +39,55 @@
   margin-bottom: 0.8rem;
 }
 
+/* ==============================
+   比較表 (Python vs Ruby)
+============================== */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background-color: #fff;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid #cce5ff;
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  line-height: 1.6;
+  color: #333;
+}
+
+.compare-table th {
+  background-color: #e8f3ff;
+  color: #005fa3;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.compare-table tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+
+.compare-table tr:hover {
+  background-color: #e8f0ff;
+  transition: background-color 0.2s;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+  .compare-table th,
+  .compare-table td {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+
 /* モバイル対応 */
 @media (max-width: 600px) {
   .ability-container {

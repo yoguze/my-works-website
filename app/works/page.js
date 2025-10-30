@@ -31,7 +31,9 @@ export default function Home() {
                 <img src="/sky_workshop.png" alt="インターン1" />
                 <div className="body">
                     <h2>Sky株式会社:3Daysワークショップ</h2>
-                    <p>現在、参加予定で検討中です。</p>
+                    <p>現在、参加が確定しています。この3dayインターンで実施するアンケートアプリの作成により、
+                      MySQLを用いたAPIの設計が可能になり、TailwindCSSやJavascriptによるフロントエンドの開発力
+                      強化図れると思います。</p>
                 </div>
               </article>
               <article className="work-item">
