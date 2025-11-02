@@ -36,49 +36,11 @@ export default function Home() {
               <section>
                 <h2>Ruby</h2>
                 <p>
-                  Ruby on Railsを用いたWebアプリケーション開発が可能です。これにより、従来のPythonによる
-                  Webアプリケーション開発よりも効率的に開発を進めることができるようになりました。なお、以下
-                  にWebアプリケーションにおけるPythonとRubyの違いを表で示します。
+                  Ruby on Railsを用いたWebアプリケーション開発が可能となったことにより、従来のPythonによる
+                  Webアプリケーション開発では実装が難しかったデータベースとの連携が容易になり、ユーザー認証
+                  や権限管理の実装もスムーズに行えるようになりました。
                 </p>
               </section>
-
-              <table className="compare-table">
-                <thead>
-                  <tr>
-                    <th>項目</th>
-                    <th>Python</th>
-                    <th>Ruby</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>主なWebフレームワーク</td>
-                    <td>Django / Flask / FastAPI</td>
-                    <td>Ruby on Rails</td>
-                  </tr>
-                  <tr>
-                    <td>特徴</td>
-                    <td>構造が明確で保守しやすい</td>
-                    <td>規約重視で開発スピードが速い</td>
-                  </tr>
-                  <tr>
-                    <td>開発文化</td>
-                    <td>安定性と可読性を重視</td>
-                    <td>開発者の幸福度と自由度を重視</td>
-                  </tr>
-                  <tr>
-                    <td>向いている用途</td>
-                    <td>データ分析・AI・API開発</td>
-                    <td>Webサービス・スタートアップ開発</td>
-                  </tr>
-                  <tr>
-                    <td>学習難易度</td>
-                    <td>初心者でも理解しやすい構文</td>
-                    <td>柔軟な文法で応用が効く</td>
-                  </tr>
-                </tbody>
-              </table>
-
 
               <section>
                 <h2>JavaScript</h2>
@@ -92,6 +54,7 @@ export default function Home() {
                 <h2>HTML / CSS</h2>
                 <p>
                   レスポンシブデザイン、モバイルファースト設計、アクセシビリティを考慮したマークアップなどが設計可能。
+                  最近ではTailwind CSSを用いたスタイリングも可能になりました。
                 </p>
               </section>
 
