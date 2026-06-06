@@ -1,9 +1,9 @@
 "use client";
 
 import Head from 'next/head';
-import Link from 'next/link';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import './form.css'; // または styles フォルダに移動した場合は 'styles/contact.css'
-import { FaXTwitter, FaGithub } from "react-icons/fa6"; 
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
@@ -52,16 +52,7 @@ export default function ContactForm() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <header>
-        <nav className="navbar">
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/ability">Ability</Link></li>
-            <li><Link href="/works">Works</Link></li>
-            <li><Link href="/form">Contact</Link></li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <div className="contact-container">
         <h1>Contact Me</h1>
         <form onSubmit={sendEmail}>
@@ -100,18 +91,7 @@ export default function ContactForm() {
         </form>
         {status && <p className="status-message">{status}</p>}
       </div> 
-      <footer>
-        <p>&copy; 2025 My Website</p>
-        <p>All rights reserved.</p>
-        <div className="social-icons">
-          <a href="https://x.com/nmw_2025" target="_blank" rel="noopener noreferrer">
-            <FaXTwitter size={28} />
-          </a>
-          <a href="https://github.com/yoguze" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={28} />
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
