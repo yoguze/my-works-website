@@ -28,7 +28,19 @@ export default function Home() {
             <h1>My Works</h1>
             <div className="work-list">
               <article className="work-item">
-                <img src="/sky_workshop.png" alt="インターン1" />
+                <img src="/GCI summer2026.png" alt="インターン1" />
+                <div className="body">
+                    <h2>GCI Summer2026</h2>
+                    <p>データサイエンティストや将来のキャリアアップを目指して参加しました。
+                      Kaggle形式のコンペやマーケティングやSQLなどを利用した最終課題を経験したことで、
+                      データサイエンティストになるためのアウトプットを経験することができました。
+                      なお、こちらの合格率は20%前後でした。
+                    </p>
+                    <li><Link href="https://gci2.t.u-tokyo.ac.jp/">https://gci2.t.u-tokyo.ac.jp/</Link></li>
+                </div>
+              </article>
+              <article className="work-item">
+                <img src="/workshop.png" alt="インターン1" />
                 <div className="body">
                     <h2>Sky株式会社:3Daysワークショップ</h2>
                     <p>現在、参加が確定しています。この3dayインターンで実施するアンケートアプリの作成により、
