@@ -1,17 +1,19 @@
 import Link from 'next/link';
 
-export default function WorkItem({ title, image, alt, description, link }) {
+export default function WorkItem({ title, image, alt, description, links = [] }) {
   return (
     <article className="work-item">
       <img src={image} alt={alt} />
       <div className="body">
         <h2>{title}</h2>
         <p>{description}</p>
-        {link && (
+        {links.length > 0 && (
           <ul>
-            <li>
-              <Link href={link}>{link}</Link>
-            </li>
+            {links.map(({ href, label }) => (
+              <li key={href}>
+                <Link href={href}>{label ?? href}</Link>
+              </li>
+            ))}
           </ul>
         )}
       </div>
