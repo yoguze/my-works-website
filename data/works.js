@@ -8,7 +8,14 @@ export const works = [
     links: [{ href: "https://gci2.t.u-tokyo.ac.jp/" }],
   },
   {
-    title: "Sky株式会社:3Daysワークショップ",
+    title: "最低賃金と犯罪率 ― 都道府県パネルデータ分析",
+    image: "/minimum-wage-crime-analysis.png",
+    alt: "最低賃金と犯罪率の分析レポート",
+    description:
+      "大学の授業で実施したパネル分析の発表資料。日本の都道府県パネルデータ（2016–2022）を用い、実質最低賃金と犯罪認知率の関係を固定効果モデルで分析。e-Stat・警察庁などの公的データを収集・整理し、最低賃金上昇と犯罪率低下の関連を検証。景気変動によるバイアスなどの限界も考察した。",
+    links: [{ href: "/minimum-wage-crime-analysis.pdf", label: "minimum-wage-crime-analysis.pdf" }],
+  },
+  {
     image: "/workshop.png",
     alt: "インターン1",
     description:
