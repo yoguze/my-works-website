@@ -3,47 +3,48 @@
 import Head from 'next/head';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import './form.css'; // または styles フォルダに移動した場合は 'styles/contact.css'
+import './form.css';
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
-export default function ContactForm() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    title: "",
-    message: ""
-  });
-  const [status, setStatus] = useState("");
+const initialContactFormData = {
+  name: "",
+  email: "",
+  title: "",
+  message: "",
+};
 
-  // 入力変更時
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
-    });
+export default function ContactPage() {
+  const [contactFormData, setContactFormData] = useState(initialContactFormData);
+  const [submissionMessage, setSubmissionMessage] = useState("");
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setContactFormData((previousData) => ({
+      ...previousData,
+      [name]: value,
+    }));
   };
 
-  // 送信処理
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
 
-    // EmailJSに送信
-        emailjs.send(
+    emailjs
+      .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        form,
+        contactFormData,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
-
       .then(() => {
-        setStatus("送信しました！ありがとうございます。");
-        setForm({ name: "", email: "", title: "", message: "" });
+        setSubmissionMessage("送信しました！ありがとうございます。");
+        setContactFormData(initialContactFormData);
       })
       .catch(() => {
-        setStatus("送信に失敗しました。時間を置いて再試行してください。");
+        setSubmissionMessage("送信に失敗しました。時間を置いて再試行してください。");
       });
   };
+
   return (
     <>
       <Head>
@@ -55,42 +56,42 @@ export default function ContactForm() {
       <Header />
       <div className="contact-container">
         <h1>Contact Me</h1>
-        <form onSubmit={sendEmail}>
+        <form onSubmit={handleFormSubmit}>
           <input
             type="text"
             name="name"
             placeholder="お名前"
-            value={form.name}
-            onChange={handleChange}
+            value={contactFormData.name}
+            onChange={handleInputChange}
             required
           />
           <input
             type="email"
             name="email"
             placeholder="メールアドレス"
-            value={form.email}
-            onChange={handleChange}
+            value={contactFormData.email}
+            onChange={handleInputChange}
             required
           />
           <input
             type="text"
             name="title"
             placeholder="件名"
-            value={form.title}
-            onChange={handleChange}
+            value={contactFormData.title}
+            onChange={handleInputChange}
             required
           />
           <textarea
             name="message"
             placeholder="お問い合わせ内容"
-            value={form.message}
-            onChange={handleChange}
+            value={contactFormData.message}
+            onChange={handleInputChange}
             required
           />
           <button type="submit">送信</button>
         </form>
-        {status && <p className="status-message">{status}</p>}
-      </div> 
+        {submissionMessage && <p className="status-message">{submissionMessage}</p>}
+      </div>
       <Footer />
     </>
   );

@@ -9,9 +9,9 @@ export default function WorkItem({ title, image, alt, description, links = [] })
         <p>{description}</p>
         {links.length > 0 && (
           <ul>
-            {links.map(({ href, label }) => (
-              <li key={href}>
-                <Link href={href}>{label ?? href}</Link>
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}>{link.label ?? link.href}</Link>
               </li>
             ))}
           </ul>

@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import './globals.css'; // または styles フォルダに移動した場合は 'styles/contact.css'
 
-export default function Home() {
+export default function AbilityPage() {
   return (
     <>
       <Head>
