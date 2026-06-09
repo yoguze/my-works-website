@@ -16,11 +16,11 @@ export const portfolioWorks = [
     links: [{ href: "/minimum-wage-crime-analysis.pdf", label: "minimum-wage-crime-analysis.pdf" }],
   },
   {
-    title: "Sky株式会社:3Daysワークショップ",
+    title: "ワークショップ・インターンシップ",
     image: "/workshop.png",
-    alt: "Sky株式会社 3Daysワークショップ",
+    alt: "ワークショップ・インターンシップ",
     description:
-      "それぞれのワークショップでWebエンジニアとしての面白い知見を得ることができました。AIに依存しないコードの書き方・Next.jsのコンポーネント設計・Typescript・n8nなどのAIエージェントの使い方・共同開発の際の進め方を教えていただき、スキルや仕事観が大きく向上しました",
+      "Sky株式会社3daysワークショップ・GA technologies・Skyfall・TOKIUM3daysインターンに参加しました。それぞれのワークショップでWebエンジニアとしての面白い知見を得ることができました。AIに依存しないコードの書き方・Next.jsのコンポーネント設計・Typescript・n8nなどのAIエージェントの使い方・共同開発の際の進め方を教えていただき、スキルや仕事観が大きく向上しました",
   },
   {
     title: "声優リサーチャー",
