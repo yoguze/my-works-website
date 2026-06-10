@@ -32,7 +32,6 @@ export const portfolioWorks = [
     highlights: [
       "Poke API・OpenAI API・microCMSを組み合わせたAPI設計",
       "Next.js + TypeScriptでフロントエンドと外部APIを連携",
-      "ゲーム進行に合わせてAIの質問を動的に生成",
       "OpenAI API のトークン消費を抑えるため、AI の質問チャットとユーザーの回答入力欄を UI 上で分離し、送信するコンテキストを最小化した",
     ],
     techStack: ["Next.js", "TypeScript", "OpenAI API", "microCMS", "Poke API"],
