@@ -1,69 +1,123 @@
+export const WORK_CATEGORIES = ["開発作品", "データ分析", "経験・イベント"];
+
+export const HIGHLIGHTS_LABEL_BY_CATEGORY = {
+  "開発作品": "工夫した点",
+  "データ分析": "分析のポイント",
+  "経験・イベント": "学んだこと",
+};
+
 export const portfolioWorks = [
   {
     title: "GCI Summer2026",
+    category: "経験・イベント",
     image: "/GCI summer2026.png",
     alt: "GCI Summer2026 インターン",
-    description:
-      "データサイエンティストや将来のキャリアアップを目指して参加中です。Kaggle形式のコンペやマーケティング・SQLの知識の取得とデータサイエンスをビジネスに応用させるような最終課題を経験することで、データサイエンティストになるためのアウトプットを経験することができます。なお、こちらの合格率は多くても15%だそうです。",
-    links: [{ href: "https://gci2.t.u-tokyo.ac.jp/" }],
+    summary:
+      "データサイエンスとキャリアアップを目指して参加している、東京大学主催の短期プログラム。",
+    highlights: [
+      "Kaggle形式のコンペティションで実データを扱う経験",
+      "マーケティング・SQLを活用したビジネス応用型の最終課題",
+      "合格率15%前後の選考を突破して参加",
+    ],
+    techStack: ["Python", "SQL", "Kaggle"],
+    links: ["https://gci2.t.u-tokyo.ac.jp/"],
+  },
+  {
+    title: "ポケモンアキネーター",
+    category: "開発作品",
+    image: "/pokemon_akinator.png",
+    alt: "ポケモンアキネーター",
+    summary:
+      "AIとのYES/NOチャットを通じて、あるポケモンを当てるWebアプリ。",
+    highlights: [
+      "Poke API・OpenAI API・microCMSを組み合わせたAPI設計",
+      "Next.js + TypeScriptでフロントエンドと外部APIを連携",
+      "ゲーム進行に合わせてAIの質問を動的に生成",
+      "OpenAI API のトークン消費を抑えるため、AI の質問チャットとユーザーの回答入力欄を UI 上で分離し、送信するコンテキストを最小化した",
+    ],
+    techStack: ["Next.js", "TypeScript", "OpenAI API", "microCMS", "Poke API"],
+    links: [
+      "https://github.com/yoguze/pokemon_akinator",
+      "https://pokemon-akinator.vercel.app/",
+    ],
   },
   {
     title: "最低賃金と犯罪率 ― 都道府県パネルデータ分析",
+    category: "データ分析",
     image: "/minimum-wage-crime-analysis.png",
     alt: "最低賃金と犯罪率の分析レポート",
-    description:
-      "大学の授業で実施したパネル分析の発表資料。日本の都道府県パネルデータ（2016–2022）を用い、実質最低賃金と犯罪認知率の関係を固定効果モデルで分析。e-Stat・警察庁などの公的データを収集・整理し、最低賃金上昇と犯罪率低下の関連を検証。景気変動によるバイアスなどの限界も考察した。",
-    links: [{ href: "/minimum-wage-crime-analysis.pdf", label: "minimum-wage-crime-analysis.pdf" }],
+    summary:
+      "大学の授業で実施した、都道府県パネルデータを用いた実証分析の発表資料。",
+    highlights: [
+      "e-Stat・警察庁などから2016–2022年のデータを収集・整理",
+      "固定効果モデルで実質最低賃金と犯罪認知率の関係を推定",
+      "景気変動による下方バイアスなど、分析の限界も考察",
+    ],
+    techStack: ["パネルデータ分析", "固定効果モデル", "e-Stat"],
+    links: ["/minimum-wage-crime-analysis.pdf"],
   },
   {
     title: "ワークショップ・インターンシップ",
+    category: "経験・イベント",
     image: "/workshop.png",
     alt: "ワークショップ・インターンシップ",
-    description:
-      "Sky株式会社3daysワークショップ・GA technologies・Skyfall・TOKIUM3daysインターンに参加しました。それぞれのワークショップでWebエンジニアとしての面白い知見を得ることができました。AIに依存しないコードの書き方・Next.jsのコンポーネント設計・Typescript・n8nなどのAIエージェントの使い方・共同開発の際の進め方を教えていただき、スキルや仕事観が大きく向上しました",
-  },
-  {
-    title: "声優リサーチャー",
-    image: "/seiyu-researcher.png",
-    alt: "声優リサーチャー",
-    description:
-      "あらかじめ自分が好きな声優を設定してfeedparserを用いてGoogleニュースRSSを解析して設定したキーワードに関する記事を20件取得してAPSchedulerで10分ごとに自動でニュースを更新する機能を実装した。これにより、PythonでのWebスクレイピングやRSSフィードの解析ができるようになった。",
-    links: [{ href: "https://github.com/yoguze/seiyu-researcher.git" }],
+    summary:
+      "Sky・GA technologies・TOKIUMなど複数社のワークショップ・インターンに参加。",
+    highlights: [
+      "AIに依存しないコードの書き方とNext.jsのコンポーネント設計",
+      "TypeScriptやn8nを用いたAIエージェントの活用",
+      "共同開発におけるタスク分担と進め方",
+    ],
+    techStack: ["Next.js", "TypeScript", "n8n"],
   },
   {
     title: "200-calculation-game",
+    category: "開発作品",
     image: "/200-calculation-game.png",
     alt: "200-calculation-game",
-    description:
-      "制限時間内に四則演算して200に限りなく近い値を作るゲーム。React・Pythonを用いて作成した。昔のセキュリティキャンプ・ミニで学んだWebsocketを用いたリアルタイム通信の実装を応用した。なお、VercelでのアプリURLは1人対戦用でRenderでのアプリURLは通信対戦の際にご自由に使ってください。",
+    summary:
+      "制限時間内に四則演算で200に近い値を作るゲーム。ソロプレイとオンライン対戦に対応。",
+    highlights: [
+      "WebSocketを用いたリアルタイム通信の実装",
+      "Vercel（ソロ用）とRender（対戦用）で用途に応じたデプロイ先の使い分け",
+      "セキュリティキャンプ・ミニで学んだ知識を個人開発に応用",
+    ],
+    techStack: ["React", "Python", "WebSocket"],
     links: [
-      { href: "https://github.com/yoguze/calculation-game" },
-      { href: "https://calculation-game-eta.vercel.app/" },
-      { href: "https://calculation-game.onrender.com" },
+      "https://github.com/yoguze/calculation-game",
+      "https://calculation-game-eta.vercel.app/",
+      "https://calculation-game.onrender.com",
     ],
   },
   {
     title: "セキュリティキャンプ2025・全国大会",
+    category: "経験・イベント",
     image: "/finished-item.png",
     alt: "セキュリティキャンプ2025・全国大会",
-    description:
-      "自分は開発コースZ3「セキュリティAIagent開発ゼミ」に参加しました。ここで、外部APIを用いたアプリ開発・Webスクレイピング・セキュリティに関する知識を学べただけでなく、本格的なチームでの開発経験を得ることができました。",
-    links: [{ href: "https://www.ipa.go.jp/archive/jinzai/security-camp/2025/camp/zenkoku/index.html" }],
-  },
-  {
-    title: "フルーツアキネーター",
-    image: "/fruit-akinetor.png",
-    alt: "フルーツアキネーター",
-    description:
-      "ReactとPythonを用いて作成。あらかじめ設定した20個の果物からランダムなものが1つクイズとして出題される。ユーザーはAIからの質問を通じて答えを絞り込んでいく。このとき始めてReactの利用とLLMを用いたアプリ開発が出来るようになった",
-    links: [{ href: "https://github.com/yoguze/fruit-akinetor.git" }],
+    summary:
+      "開発コースZ3「セキュリティAI agent開発ゼミ」に参加した、国内最大級のセキュリティ人材育成プログラム。",
+    highlights: [
+      "外部APIを用いたアプリ開発とWebスクレイピングの実践",
+      "セキュリティを意識した開発の基礎知識の習得",
+      "本格的なチーム開発での設計・実装・役割分担の経験",
+    ],
+    techStack: ["Python", "外部API", "Webスクレイピング"],
+    links: [
+      "https://www.ipa.go.jp/archive/jinzai/security-camp/2025/camp/zenkoku/index.html",
+    ],
   },
   {
     title: "ポートフォリオ",
+    category: "開発作品",
     image: "/website.png",
     alt: "ポートフォリオサイト",
-    description:
-      "Next.jsで作成。メールのお問い合わせフォームはgmail.jsを使用。内容やデザインは検討中。",
-    links: [{ href: "https://github.com/yoguze/my-works-website.git" }],
+    summary: "Next.jsで制作した、自身のスキルと作品を紹介するWebサイト。",
+    highlights: [
+      "Header/Footer/WorkItemのコンポーネント化で保守性を確保",
+      "作品データとUIの分離（data/works.js）",
+      "EmailJSによるお問い合わせフォームの実装",
+    ],
+    techStack: ["Next.js", "React", "EmailJS"],
+    links: ["https://github.com/yoguze/my-works-website.git"],
   },
 ];
