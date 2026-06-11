@@ -41,6 +41,24 @@ export const portfolioWorks = [
     ],
   },
   {
+    title: "ポケモンアキネーター",
+    category: "開発作品",
+    image: "/voice_trainer.png",
+    alt: "voice_trainer",
+    summary:
+      "男の人が女性の声を作るための練習用アプリ。",
+    highlights: [
+      "IndexedDBによって音声解析をフロントエンドで完結させ、サーバー運用コストを抑えつつ練習データを外部送信しない設計にした。",
+      "音域・声質・イントネーションの3軸UIで、専門知識がなくても目標の声を直感的に設定できるようにした。",
+      "総合スコアに加え各指標の推移をグラフで切り替え表示し、弱点と上達の様子を把握しやすくした。",
+    ],
+    techStack: ["Next.js", "Web Audio API", "IndexedDB"],
+    links: [
+      "https://github.com/yoguze/voice_trainer.git",
+      "https://voice-trainer-dun.vercel.app/ja",
+    ],
+  },
+  {
     title: "最低賃金と犯罪率 ― 都道府県パネルデータ分析",
     category: "データ分析",
     image: "/minimum-wage-crime-analysis.png",
