@@ -41,7 +41,7 @@ export const portfolioWorks = [
     ],
   },
   {
-    title: "ポケモンアキネーター",
+    title: "両生類ボイストレーナー",
     category: "開発作品",
     image: "/voice_trainer.png",
     alt: "voice_trainer",
