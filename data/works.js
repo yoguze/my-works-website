@@ -79,7 +79,7 @@ export const portfolioWorks = [
     image: "/workshop.png",
     alt: "ワークショップ・インターンシップ",
     summary:
-      "Sky・GA technologies・TOKIUMなど複数社のワークショップ・インターンに参加。",
+      "Sky・GA technologiesなど複数社のワークショップ・インターンに参加。",
     highlights: [
       "AIに依存しないコードの書き方とNext.jsのコンポーネント設計",
       "TypeScriptやn8nを用いたAIエージェントの活用",
