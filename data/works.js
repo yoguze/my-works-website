@@ -17,7 +17,7 @@ export const portfolioWorks = [
     highlights: [
       "Kaggle形式のコンペティションで実データを扱う経験",
       "マーケティング・SQLを活用したビジネス応用型の最終課題",
-      "合格率15%前後の選考を突破して参加",
+      "修了率は15%前後らしい",
     ],
     techStack: ["Python", "SQL", "Kaggle"],
     links: ["https://gci2.t.u-tokyo.ac.jp/"],
