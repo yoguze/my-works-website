@@ -73,20 +73,7 @@ export const portfolioWorks = [
     techStack: ["パネルデータ分析", "固定効果モデル", "e-Stat"],
     links: ["/minimum-wage-crime-analysis.pdf"],
   },
-  {
-    title: "ワークショップ・インターンシップ",
-    category: "経験・イベント",
-    image: "/workshop.png",
-    alt: "ワークショップ・インターンシップ",
-    summary:
-      "Sky・GA_technologiesなど複数社のワークショップ・インターンに参加。",
-    highlights: [
-      "AIに依存しないコードの書き方とNext.jsのコンポーネント設計",
-      "Cursorやn8nを用いたAIエージェントの活用",
-      "共同開発におけるタスク分担と進め方",
-    ],
-    techStack: ["Next.js", "TypeScript", "n8n"],
-  },
+
   {
     title: "200-calculation-game",
     category: "開発作品",
