@@ -55,7 +55,13 @@ export default function WorkItem({
             <ul className="work-links">
               {links.map((url) => (
                 <li key={url}>
-                  <Link href={url}>{url}</Link>
+                  {url.startsWith("/") && url.endsWith(".zip") ? (
+                    <a href={url} download>
+                      {url}
+                    </a>
+                  ) : (
+                    <Link href={url}>{url}</Link>
+                  )}
                 </li>
               ))}
             </ul>

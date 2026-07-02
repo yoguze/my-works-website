@@ -73,6 +73,25 @@ export const portfolioWorks = [
     techStack: ["パネルデータ分析", "固定効果モデル", "e-Stat"],
     links: ["/minimum-wage-crime-analysis.pdf"],
   },
+  {
+    title: "Estimating Conditional Volatility of Japanese Equity Returns",
+    category: "データ分析",
+    image: "/GARCH_report.png",
+    alt: "日本株リターンの条件付きボラティリティ推定（GARCH分析）",
+    summary:
+      "大学の金融計量経済学の最終プロジェクト。Cowpertwait & Metcalfe『Introductory Time Series with R』付属の疑似データ（stockmarket.dat 等）を用い、日本株リターンの条件付きボラティリティをGARCH / GJR-GARCHで推定・比較した。",
+    highlights: [
+      "M0〜M4のモデル比較と診断統計量による妥当性の検証",
+      "条件付きボラティリティの推定結果を可視化し、実現ボラティリティと比較",
+      "GJR-GARCHにより下落ショック時のボラティリティ反応の非対称性を捉え、対称GARCHより適合度が向上",
+      "使用データは書籍付属の疑似データであり、出典は GitHub 上の Introductory_Time_Series_with_R_datasets リポジトリ",
+    ],
+    techStack: ["GARCH", "GJR-GARCH", "Python", "R", "金融時系列分析"],
+    links: [
+      "/GARCH_volatility_analysis.zip",
+      "https://github.com/dallascard/Introductory_Time_Series_with_R_datasets.git",
+    ],
+  },
 
   {
     title: "200-calculation-game",
