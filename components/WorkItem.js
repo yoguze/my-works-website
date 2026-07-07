@@ -13,7 +13,7 @@ export default function WorkItem({
 }) {
   return (
     <article className="work-item">
-      <img src={image} alt={alt} />
+      <img src={encodeURI(image)} alt={alt} />
       <div className="body">
         <div className="work-item-header">
           <h2>{title}</h2>

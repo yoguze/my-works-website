@@ -10,7 +10,7 @@ export const portfolioWorks = [
   {
     title: "GCI Summer2026",
     category: "経験・イベント",
-    image: "/GCI summer2026.png",
+    image: "/image/GCI summer2026.png",
     alt: "GCI Summer2026 インターン",
     summary:
       "データサイエンスとキャリアアップを目指して参加している、東京大学主催の短期プログラム。",
@@ -25,7 +25,7 @@ export const portfolioWorks = [
   {
     title: "ポケモンアキネーター",
     category: "開発作品",
-    image: "/pokemon_akinator.png",
+    image: "/image/pokemon_akinator.png",
     alt: "ポケモンアキネーター",
     summary:
       "AIとのYES/NOチャットを通じて、あるポケモンを当てるWebアプリ。",
@@ -43,7 +43,7 @@ export const portfolioWorks = [
   {
     title: "両生類ボイストレーナー",
     category: "開発作品",
-    image: "/voice_trainer.png",
+    image: "/image/voice_trainer.png",
     alt: "voice_trainer",
     summary:
       "男の人が女性の声を作るための練習用アプリ。",
@@ -61,7 +61,7 @@ export const portfolioWorks = [
   {
     title: "最低賃金と犯罪率 ― 都道府県パネルデータ分析",
     category: "データ分析",
-    image: "/minimum-wage-crime-analysis.png",
+    image: "/image/minimum-wage-crime-analysis.png",
     alt: "最低賃金と犯罪率の分析レポート",
     summary:
       "大学の授業で実施した、都道府県パネルデータを用いた実証分析の発表資料。",
@@ -76,7 +76,7 @@ export const portfolioWorks = [
   {
     title: "Estimating Conditional Volatility of Japanese Equity Returns",
     category: "データ分析",
-    image: "/GARCH_report.png",
+    image: "/image/GARCH_report.png",
     alt: "日本株リターンの条件付きボラティリティ推定（GARCH分析）",
     summary:
       "大学の金融計量経済学の最終プロジェクト。Cowpertwait & Metcalfe『Introductory Time Series with R』付属の疑似データ（stockmarket.dat 等）を用い、日本株リターンの条件付きボラティリティをGARCH / GJR-GARCHで推定・比較した。",
@@ -92,11 +92,29 @@ export const portfolioWorks = [
       "https://github.com/dallascard/Introductory_Time_Series_with_R_datasets.git",
     ],
   },
+  {
+    title: "Weight ヨーグルト ― 離散選択モデルに基づく成長戦略",
+    category: "データ分析",
+    image: "/image/weight_yogurt_analysis.png",
+    alt: "Weightヨーグルトの価格・広告戦略分析",
+    summary:
+      "4ブランドのヨーグルト市場を対象に、多項ロジットモデル（MNL）で消費者のブランド選択を推定。シェア3位の Weight をクライアントと想定し、価格・広告の政策シミュレーションから成長戦略を検討した。",
+    highlights: [
+      "価格・広告・ブランド固有効果を含むMNLを推定し、各係数の有意性を検証",
+      "Weight をチャレンジャーブランドとして価格改定・広告投入のシナリオをシミュレーション",
+      "市場シェアと収益への影響を比較し、実行可能な政策オプションを整理",
+    ],
+    techStack: ["多項ロジット", "離散選択モデル", "Python", "pandas", "scipy"],
+    links: [
+      "/weight_yogurt_analysis.pdf",
+      "/weight_yogurt_analysis.zip",
+    ],
+  },
 
   {
     title: "200-calculation-game",
     category: "開発作品",
-    image: "/200-calculation-game.png",
+    image: "/image/200-calculation-game.png",
     alt: "200-calculation-game",
     summary:
       "制限時間内に四則演算で200に近い値を作るゲーム。ソロプレイとオンライン対戦に対応。",
@@ -115,7 +133,7 @@ export const portfolioWorks = [
   {
     title: "セキュリティキャンプ2025・全国大会",
     category: "経験・イベント",
-    image: "/finished-item.png",
+    image: "/image/finished-item.png",
     alt: "セキュリティキャンプ2025・全国大会",
     summary:
       "開発コースZ3「セキュリティAI agent開発ゼミ」に参加した、国内最大級のセキュリティ人材育成プログラム。",
@@ -132,7 +150,7 @@ export const portfolioWorks = [
   {
     title: "ポートフォリオ",
     category: "開発作品",
-    image: "/website.png",
+    image: "/image/website.png",
     alt: "ポートフォリオサイト",
     summary: "Next.jsで制作した、自身のスキルと作品を紹介するWebサイト。",
     highlights: [
