@@ -1,17 +1,15 @@
-import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import './globals.css'; // または styles フォルダに移動した場合は 'styles/contact.css'
+import './globals.css';
+
+export const metadata = {
+  title: "Home | NMW",
+  description: "nmwのポートフォリオサイト",
+};
 
 export default function HomePage() {
   return (
     <>
-      <Head>
-        <title>My WebSite</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-
       <Header />
 
       <main>

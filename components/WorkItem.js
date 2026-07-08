@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function WorkItem({
   title,
@@ -13,7 +14,15 @@ export default function WorkItem({
 }) {
   return (
     <article className="work-item">
-      <img src={encodeURI(image)} alt={alt} />
+      <div className="work-item-image">
+        <Image
+          src={encodeURI(image)}
+          alt={alt}
+          fill
+          sizes="(max-width: 899px) 100vw, 480px"
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
       <div className="body">
         <div className="work-item-header">
           <h2>{title}</h2>

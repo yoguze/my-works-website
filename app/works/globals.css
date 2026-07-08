@@ -65,11 +65,11 @@
   overflow: hidden;
 }
 
-.work-item img {
+.work-item-image {
+  position: relative;
   width: 100%;
+  aspect-ratio: 16 / 9;
   display: block;
-  aspect-ratio: 16 / 9;   /* サムネ比率をそろえる（任意） */
-  object-fit: cover;
 }
 
 .work-item .body {

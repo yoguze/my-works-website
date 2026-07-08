@@ -17,7 +17,7 @@ export const portfolioWorks = [
     highlights: [
       "Kaggle形式のコンペティションで実データを扱う経験",
       "マーケティング・SQLを活用したビジネス応用型の最終課題",
-      "修了率は15%前後らしい",
+      "修了率は20%前後らしい",
     ],
     techStack: ["Python", "SQL", "Kaggle"],
     links: ["https://gci2.t.u-tokyo.ac.jp/"],
@@ -144,7 +144,7 @@ export const portfolioWorks = [
     ],
     techStack: ["Python", "外部API", "Webスクレイピング"],
     links: [
-      "https://www.ipa.go.jp/archive/jinzai/security-camp/2025/camp/zenkoku/index.html",
+      "https://www.ipa.go.jp/archive/jinzai/security-camp/2025/camp/zenkoku/program/z.html",
     ],
   },
   {
@@ -159,6 +159,9 @@ export const portfolioWorks = [
       "EmailJSによるお問い合わせフォームの実装",
     ],
     techStack: ["Next.js", "React", "EmailJS"],
-    links: ["https://github.com/yoguze/my-works-website.git"],
+    links: [
+      "https://github.com/yoguze/my-works-website.git",
+      "https://nmw-works-website.vercel.app/",
+    ],
   },
 ];

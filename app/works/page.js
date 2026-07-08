@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import WorkItem from '../../components/WorkItem';
@@ -9,6 +8,11 @@ import {
 } from '../../data/works';
 import './globals.css';
 
+export const metadata = {
+  title: "Works | NMW",
+  description: "開発作品・データ分析・経験・イベントの一覧",
+};
+
 export default function WorksPage() {
   const worksByCategory = WORK_CATEGORIES.map((category) => ({
     category,
@@ -17,12 +21,6 @@ export default function WorksPage() {
 
   return (
     <>
-      <Head>
-        <title>My WebSite</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-
       <Header />
       <main>
         <section className="works">
@@ -50,4 +48,3 @@ export default function WorksPage() {
     </>
   );
 }
-
