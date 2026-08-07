@@ -133,7 +133,7 @@ export const portfolioWorks = [
   {
     title: "セキュリティキャンプ2025・全国大会",
     category: "経験・イベント",
-    image: "/image/finished-item.png",
+    image: "/image/securityacamp-finished-item.png",
     alt: "セキュリティキャンプ2025・全国大会",
     summary:
       "開発コースZ3「セキュリティAI agent開発ゼミ」に参加した、国内最大級のセキュリティ人材育成プログラム。",
@@ -142,7 +142,7 @@ export const portfolioWorks = [
       "セキュリティを意識した開発の基礎知識の習得",
       "本格的なチーム開発での設計・実装・役割分担の経験",
     ],
-    techStack: ["Python", "外部API", "Webスクレイピング"],
+    techStack: ["Python", "API", "Webスクレイピング"],
     links: [
       "https://www.ipa.go.jp/archive/jinzai/security-camp/2025/camp/zenkoku/program/z.html",
     ],
@@ -164,4 +164,22 @@ export const portfolioWorks = [
       "https://nmw-works-website.vercel.app/",
     ],
   },
+   {
+    title: "株式会社ソフテム5daysインターン",
+    category: "経験・イベント",
+    image: "/image/softem-intern.png",
+    alt: "株式会社ソフテム5daysインターン",
+    summary:
+      "2026年8/3~8/7にかけて参加した5daysインターン。ここではLINEWorksのAPIを用いて、指定された設計課題を3人チームで解いた。また自分達は時間に余裕があったので、固定メニュー機能やボタンテンプレートを用いて選択肢から送信する内容を決めるものなどを追加実装しました。また、AIが使用禁止こともあってエンジニアとして必要な基礎体力や知識を得ることができた。（詳しくは「学んだこと」を参照）会社概要はLinkを参照",
+    highlights: [
+      "自分でネットでPythonのサンプルコードを調べてシステムに組み込む力",
+      "要件定義書・イベント設計書の作成",
+      "従来AIによって実装してきたAPIに関するコーディングや仕様の理解度UP",
+    ],
+    techStack: ["Python", "API", "設計書作成"],
+    links: [
+      "https://softem-net.co.jp/",
+    ],
+  }
 ];
+
