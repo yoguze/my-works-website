@@ -74,25 +74,6 @@ export const portfolioWorks = [
     links: ["/minimum-wage-crime-analysis.pdf"],
   },
   {
-    title: "Estimating Conditional Volatility of Japanese Equity Returns",
-    category: "データ分析",
-    image: "/image/GARCH_report.png",
-    alt: "日本株リターンの条件付きボラティリティ推定（GARCH分析）",
-    summary:
-      "大学の金融計量経済学の最終プロジェクト。Cowpertwait & Metcalfe『Introductory Time Series with R』付属の疑似データ（stockmarket.dat 等）を用い、日本株リターンの条件付きボラティリティをGARCH / GJR-GARCHで推定・比較した。",
-    highlights: [
-      "M0〜M4のモデル比較と診断統計量による妥当性の検証",
-      "条件付きボラティリティの推定結果を可視化し、実現ボラティリティと比較",
-      "GJR-GARCHにより下落ショック時のボラティリティ反応の非対称性を捉え、対称GARCHより適合度が向上",
-      "使用データは書籍付属の疑似データであり、出典は GitHub 上の Introductory_Time_Series_with_R_datasets リポジトリ",
-    ],
-    techStack: ["GARCH", "GJR-GARCH", "Python", "R", "金融時系列分析"],
-    links: [
-      "/GARCH_volatility_analysis.zip",
-      "https://github.com/dallascard/Introductory_Time_Series_with_R_datasets.git",
-    ],
-  },
-  {
     title: "Weight ヨーグルト ― 離散選択モデルに基づく成長戦略",
     category: "データ分析",
     image: "/image/weight_yogurt_analysis.png",
@@ -170,7 +151,7 @@ export const portfolioWorks = [
     image: "/image/softem-intern.png",
     alt: "株式会社ソフテム5daysインターン",
     summary:
-      "2026年8/3~8/7にかけて参加した5daysインターン。ここではLINEWorksのAPIを用いて、指定された設計課題を3人チームで解いた。また自分達は時間に余裕があったので、固定メニュー機能やボタンテンプレートを用いて選択肢から送信する内容を決めるものなどを追加実装しました。また、AIが使用禁止こともあってエンジニアとして必要な基礎体力や知識を得ることができた。（詳しくは「学んだこと」を参照）会社概要はLinkを参照",
+      "2026年8/3~8/7にかけて参加した5daysインターン。ここではLINEWorksのAPIを用いて、指定された設計課題を3人チームで解いた。また自分達は時間に余裕があったので、固定メニュー機能やボタンテンプレートを用いて選択肢から送信する内容を決めるものなどを追加実装しました。また、AIが使用禁止こともあってエンジニアとして必要な基礎体力や知識を得ることができた。（詳しくは「学んだこと」を参照）会社概要はリンクを参照",
     highlights: [
       "自分でネットでPythonのサンプルコードを調べてシステムに組み込む力",
       "要件定義書・イベント設計書の作成",
