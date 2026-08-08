@@ -13,11 +13,11 @@ export const portfolioWorks = [
     image: "/image/GCI summer2026.png",
     alt: "GCI Summer2026 インターン",
     summary:
-      "データサイエンスとキャリアアップを目指して参加している、東京大学主催の短期プログラム。",
+      "データサイエンスとキャリアアップを目指して参加している、東京大学主催の短期プログラム。修了率は20%前後らしい",
     highlights: [
       "Kaggle形式のコンペティションで実データを扱う経験",
-      "マーケティング・SQLを活用したビジネス応用型の最終課題",
-      "修了率は20%前後らしい",
+      "マーケティングとデータサイエンスを掛け合わせたビジネス応用型の最終課題",
+      "NUmPy・scikit-learnなどのPythonライブラリの知識や教師あり学習などのデータサイエンスの領域における視点を深めることができた",
     ],
     techStack: ["Python", "SQL", "Kaggle"],
     links: ["https://gci2.t.u-tokyo.ac.jp/"],
