@@ -162,6 +162,25 @@ export const portfolioWorks = [
       "https://softem-net.co.jp/",
       "https://paiza.jp/student/job_offers/39534"
     ],
+  },
+  {
+    title: "TrueData-2daysサマーインターン",
+    category: "経験・イベント",
+    image: "/image/truedata_2days_intern.png",
+    alt: "TrueData-2daysサマーインターン",
+    summary:
+      "TrueDataの2daysインターンに参加し、ID-POSデータを用いたデータ分析や施策提案に取り組みました。1日目は個人でSQLやk-meansクラスタリングを用いた分析を行い、2日目はチームで顧客クラスタの特徴からターゲットとなる顧客像を考え、売上向上につながる施策を提案しました。データを分析するだけでなく、分析結果から顧客の特徴を読み取り、施策へつなげる一連の流れを経験しました。",
+    highlights: [
+      "SQLの基礎知識の習得",
+      "k-meansクラスタリングを用いたデータ分析の実践",
+      "グループでのデータサイエンティストにおける実務の一部を経験",
+    ],
+    techStack: ["SQL", "ID-POSデータ", "k-meansクラスタリング"],
+    links: [
+      "https://www.truedata.co.jp/",
+      "https://paiza.jp/student/job_offers/39151"
+    ],
   }
 ];
+
 
