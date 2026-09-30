@@ -22,6 +22,21 @@ export const portfolioWorks = [
     techStack: ["Python", "SQL", "Kaggle"],
     links: ["https://gci2.t.u-tokyo.ac.jp/"],
   },
+    {
+    title: "My Web Development Principles",
+    category: "開発作品",
+    image: "/image/my-web-development-principles.png",
+    alt: "my-web-development-principles",
+    summary:
+      "ypeScript / Next.jsによるWebアプリケーション開発において、自分が守る設計・実装・品質基準を体系化した開発ガイドライン。",
+    highlights: [
+    "要件定義から設計・実装・デバッグ・テスト・デプロイまでの開発プロセスを体系化",
+    "Lint・型チェック・Unit / Integration / E2E・Visual Regression・Performanceなどの品質基準を明文化",
+    "AIを開発支援に活用しつつ、設計判断とコードの説明責任を自分で持つ開発方針",
+    ],
+    techStack: ["Typescript", "Github Actions", "Supabase"],
+    links: ["/my-web-development-principles.pdf"],
+  },
   {
     title: "ポケモンアキネーター",
     category: "開発作品",
