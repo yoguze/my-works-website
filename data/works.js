@@ -28,7 +28,7 @@ export const portfolioWorks = [
     image: "/image/my-web-development-principles.png",
     alt: "my-web-development-principles",
     summary:
-      "ypeScript / Next.jsによるWebアプリケーション開発において、自分が守る設計・実装・品質基準を体系化した開発ガイドライン。",
+      "TypeScript / Next.jsによるWebアプリケーション開発において、自分が守る設計・実装・品質基準を体系化した開発ガイドライン。",
     highlights: [
     "要件定義から設計・実装・デバッグ・テスト・デプロイまでの開発プロセスを体系化",
     "Lint・型チェック・Unit / Integration / E2E・Visual Regression・Performanceなどの品質基準を明文化",
